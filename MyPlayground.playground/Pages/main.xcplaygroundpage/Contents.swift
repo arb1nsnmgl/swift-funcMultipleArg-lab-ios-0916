@@ -13,9 +13,13 @@
 /*: question1
  ### 1. Create a function that will take in a continent and the number of countries in that continent. It should print the following sentence "____ is a continent which contains ___ countries".
  */
-// write your code here
 
+func continents(continentName: String, numberOfCountries: Int) {
+    print("\(continentName) is a continent which contains \(numberOfCountries) countries.")
+}
 
+continents("Asia", numberOfCountries: 48)
+continents("Europe", numberOfCountries: 44)
 
 
 /*: question2
@@ -25,7 +29,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting: "Hello") //missing argument name
 
 
 
@@ -33,7 +37,7 @@ greeting("Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {      //argument 'days' should be type Int
     print("There are \(days) in \(month)")
 }
 
@@ -45,9 +49,13 @@ daysInMonth("November", days: 30)
 /*: question4
  ### 4. So far, you have created functions that take two arguments. Can you create (and call) one that takes three? Try to create a function that three parameters: a beverage, the number of bottles of that beverage, and a place you can keep those bottles. Print the sentence "____ bottles of ____ on the ____ wall."
  */
-// write your code here
 
+func whatToDoWithThisBeer(beerName: String, numberOfBeers: Int, place: String) {
+    print("\(numberOfBeers) bottles of \(beerName) on the \(place) wall.")
+}
 
+whatToDoWithThisBeer("Corona Lights", numberOfBeers: 10, place: "side of the")
+whatToDoWithThisBeer("Red Horse", numberOfBeers: 6, place: "edge of the")
 
 
 /*:
